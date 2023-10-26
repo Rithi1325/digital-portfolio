@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Profle Card UI Design | CoderGirl </title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    function scrollToElement(target) {
+      const element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  
+    // Add an event listener to each navigation link
+    const navigationLinks = document.querySelectorAll('.info a');
+    navigationLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+        scrollToElement(targetId);
+      });
+    });
+  </script>
+  
+  <section class="main">
+  <div class="profile-card"><center>
+    <div class="image">
+        <img src="mee.jpg" alt="center" height="150" width="150"> 
+    </div></center>
+    <div class="data">
+      <h2>Mary Rithika</h2>
+      <span>Developer & Designer</span>
+    </div>
+    <div class="row">
+      <div class="info">
+        <h3><a href="#about">About</a></h3>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="info">
+        <h3><a href="#education">Education</a></h3>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="info">
+        <h3><a href="#skill">Skill</a></h3>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="info">
+        <h3><a href="#project">Project</a></h3>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="info">
+        <h3><a href="#resume">Resume</a></h3>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div><br/>
+    <section id="about">
+        <div class="section-content">
+    <h2>About Me</h2>
+    <p>Hello! This is rithika. I am information technology student. </p>
+        </div>
+    </section>
+    <section id="education">
+        <div class="section-content">
+    <h2>Education</h2>
+    <p>Manonmaniam Univercity,SSB college,BSC Department. </p>
+        </div>
+    </section>
+    <section id="skill">
+        <div class="section-content">
+    <h2>Skill!!</h2>
+
+    <p><li>HTML</li> 
+    <li>CSS</li>
+    <li>C & C++</li>
+    <li>JAVA</li>
+    <li>JAVA SCRIPT</li>
+    <li>REACT JS</li>
+</p>
+        </div>
+    </section>
+    <section id="project">
+        <div class="section-content">
+    <h2>Project</h2>
+    <p>
+        <li><a href="#">Project1</a></li>
+        <li><a href="#">Project2</a></li>
+    </p>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="section-content">
+    <h2>Resume</h2>
+    <center><div class="buttons">
+        <a href="id.html" class="btn">download cv</a>
+    </center></div>
+        </div>
+    </section>
+  </div>
+</section>
+</body>
+</html>
+
+ 
